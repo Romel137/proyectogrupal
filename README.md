@@ -38,10 +38,23 @@ El sistema se compone de las siguientes entidades principales:
 
 ---
 
-## 🔧 Instalación y Ejecución
+##  Funcionalidades
+✅ Para los Pacientes:
+Registro como paciente.
 
-### 1. Clonar el repositorio
+Visualización de la lista de doctores por especialidad.
 
-```bash
-git clone https://github.com/tu-usuario/sistema-turnos-medicos.git
-cd sistema-turnos-medicos
+Reserva de turnos disponibles por fecha y hora.
+
+Visualización de turnos propios.
+
+Validación para evitar superposición de turnos.
+
+Recibirá notificaciones por email (estructura implementada, envío aún pendiente de configurar completamente).
+
+✅ Para los Doctores:
+Registro como doctor con especialidad médica.
+
+Gestión automática de su disponibilidad (no se permite agendar turnos repetidos).
+
+Visualización de turnos asignados en su perfil (en construcción).
