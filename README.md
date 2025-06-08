@@ -1,33 +1,44 @@
 # 🩺 Sistema de Turnos Médicos
 
-Este proyecto es una aplicación web desarrollada en Django que permite gestionar de manera eficiente la asignación de turnos médicos entre pacientes y doctores, clasificados por especialidades. Está diseñado para facilitar el acceso a la atención médica, digitalizando el proceso de reserva y administración de turnos.
+Este proyecto es una aplicación web desarrollada con **Django** que permite la **gestión y reserva de turnos médicos** entre pacientes y doctores, organizados por especialidades. La solución está orientada a consultorios, clínicas pequeñas o instituciones que requieran un sistema simple pero efectivo para gestionar la disponibilidad médica.
 
 ---
 
-## 📌 Objetivo del Proyecto
+## 🎯 Objetivo del Proyecto
 
-El objetivo principal es crear una plataforma funcional y sencilla donde:
+El objetivo principal es ofrecer una plataforma digital que:
 
-- Los pacientes puedan registrarse, visualizar doctores disponibles y reservar turnos.
-- Los doctores puedan ser registrados por especialidad y ser asignados a turnos.
-- El sistema evite superposiciones de turnos y controle la disponibilidad.
+- Automatice la reserva de turnos entre pacientes y profesionales de la salud.
+- Evite la sobrecarga de personal administrativo gestionando reservas de manera manual.
+- Controle la disponibilidad médica en función de día y hora.
+- Permita escalabilidad futura con funcionalidades como recordatorios por correo electrónico.
 
-Está pensado para clínicas, consultorios o sistemas médicos pequeños que buscan automatizar su proceso de atención sin necesidad de sistemas complejos ni costosos.
+---
+
+## 🧩 Estructura del Proyecto
+
+El sistema se compone de las siguientes entidades principales:
+
+- **Paciente**: Usuario registrado con rol de paciente. Puede reservar turnos.
+- **Doctor**: Usuario con especialidad médica. Puede recibir turnos y ser visualizado por los pacientes.
+- **Especialidad**: Rama médica (p. ej., Pediatría, Cardiología) que clasifica a los doctores.
+- **Turno**: Registro de una cita entre un paciente y un doctor en una fecha y hora específica.
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Python 3**
-- **Django** como framework principal
+- **Python 3** y **Django**
 - **SQLite** como base de datos por defecto
-- **HTML** con **Django Templates**
-- Sistema de autenticación de **usuarios con roles**
-- Formularios de Django (`ModelForm`)
+- **HTML** y **Django Templates** para la parte visual
+- **Autenticación de usuarios** (registro, login y logout)
+- **Sistema de roles**: Paciente / Doctor
+- **Validación de turnos duplicados**
+- **Correo electrónico** (estructura base para recordatorios, aún por implementar)
 
 ---
 
-## 🔧 Instalación y Uso
+## 🔧 Instalación y Ejecución
 
 ### 1. Clonar el repositorio
 
